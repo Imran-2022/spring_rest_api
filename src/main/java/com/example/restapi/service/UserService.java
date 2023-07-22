@@ -24,6 +24,9 @@ public class UserService {
         userList.addAll(Arrays.asList(user1,user2,user3,user4,user5));
     }
 
+    public List<User> getAllUsers() {
+        return userList;
+    }
     public Optional<User> getUser(Integer id) {
         Optional<User> optional = Optional.empty();
         for (User user: userList) {
@@ -33,5 +36,17 @@ public class UserService {
             }
         }
         return optional;
+    }
+    public User createUser(User user) {
+        userList.add(user);
+        return user;
+    }
+    public void updateUser(User user) {
+        // Since the user list is in-memory, there's no need to explicitly update.
+        // Any modifications made in the controller will be reflected in the list.
+    }
+
+    public boolean deleteUser(Integer id) {
+        return userList.removeIf(user -> user.getId() == id);
     }
 }
