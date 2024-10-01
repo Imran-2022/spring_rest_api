@@ -1,10 +1,6 @@
-# My Awesome REST API Project
+## JAVA spring REST API Endpoints
 
-Welcome to my awesome REST API project! This project provides endpoints to manage users.
-
-## API Endpoints
-
-### Get All Users
+#### #Get All Users
 
 - **Endpoint:** `GET /users`
 - **Description:** Get a list of all users.
@@ -21,7 +17,7 @@ Welcome to my awesome REST API project! This project provides endpoints to manag
 ]
 ```
 
-### Get User by ID
+#### #Get User by ID
 
 - **Endpoint:** `GET /users/{id}`
 - **Description:** Get a specific user by ID.
@@ -39,7 +35,7 @@ Welcome to my awesome REST API project! This project provides endpoints to manag
 ```
 
 
-### Create User
+#### #Create User
 
 - **Endpoint:** `POST /users`
 - **Description:** Add a new user.
@@ -58,7 +54,7 @@ Welcome to my awesome REST API project! This project provides endpoints to manag
 "Added successfully"
 ```
 
-### Update User
+#### #Update User
 
 - **Endpoint:** `PUT /users/{id}`
 - **Description:** Update an existing user.
@@ -76,16 +72,17 @@ Welcome to my awesome REST API project! This project provides endpoints to manag
 ```
 
 - **Response:**
-
+  
+```
 {
 "id": 6,
 "name": "Updated User",
 "age": 30,
 "email": "updateduser@mail.com"
 }
+```
 
-
-### Delete User
+#### #Delete User
 
 - **Endpoint:** `DELETE /users/{id}`
 - **Description:** Delete a user by ID.
